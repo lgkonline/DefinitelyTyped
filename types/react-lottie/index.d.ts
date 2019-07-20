@@ -50,15 +50,15 @@ export interface EventListener {
      * The event sent by Lottie
      */
     eventName:
-    | 'complete'
-    | 'loopComplete'
-    | 'enterFrame'
-    | 'segmentStart'
-    | 'config_ready'
-    | 'data_ready'
-    | 'loaded_images'
-    | 'DOMLoaded'
-    | 'destroy';
+        | 'complete'
+        | 'loopComplete'
+        | 'enterFrame'
+        | 'segmentStart'
+        | 'config_ready'
+        | 'data_ready'
+        | 'loaded_images'
+        | 'DOMLoaded'
+        | 'destroy';
     /**
      * A callback that will be executed when the given eventName is received
      */
@@ -105,5 +105,5 @@ export interface LottieProps {
 /**
  * Lottie allows you to render an animation from a JSON structure exported from Adobe After Effects using the Bodymovin plugin
  */
-declare class Lottie extends React.Component<LottieProps, any> { }
+declare class Lottie extends React.Component<LottieProps, any> {}
 export default Lottie;
